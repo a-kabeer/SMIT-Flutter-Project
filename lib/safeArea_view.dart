@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:myapp/widgets/custom_chat.dart';
 
 class safeAreaView extends StatelessWidget {
   const safeAreaView({super.key});
@@ -20,173 +21,20 @@ class safeAreaView extends StatelessWidget {
           color: Colors.white70,
           child: const Column(
             children: [
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Abdul Kabeer",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
+              CustomListItem(
+                name: "Abdul Kabeer",
+                message: "Jani Kidhar ho?",
+                time: "9:00am",
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Adeel",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
+              CustomListItem(
+                name: "Zahid",
+                message: "Sorry Me nhi a saka",
+                time: "9:00am",
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Zahid",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Zaid",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Ali",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Omais",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Wajahat",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Wasif",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Rehan",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Abdul Sattar",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Yousuf",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(vertical: 8.0),
-                child: ListTile(
-                  title: Text(
-                    "Abdullah",
-                    style: TextStyle(color: Colors.black),
-                  ),
-                  tileColor: Colors.white10,
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 25,
-                  ),
-                ),
+              CustomListItem(textColor: Colors.green,
+                name: "Zahid",
+                message: "Sorry Me nhi a saka",
+                time: "9:00am",
               ),
             ],
           ),
