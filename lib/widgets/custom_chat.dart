@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomChat extends StatelessWidget {
-  final String name;
+  final String? name;
   final String message;
   final String time;
   final Color tileColor;
@@ -9,7 +9,7 @@ class CustomChat extends StatelessWidget {
   final Color textColor;
   const CustomChat({
     super.key,
-    required this.name,
+    this.name,
     required this.message,
     required this.time,
     this.tileColor = Colors.white24,
@@ -26,7 +26,7 @@ class CustomChat extends StatelessWidget {
       ),
       tileColor: tileColor,
       title: Text(
-        "Yousuf",
+        name ?? "Anonymous",
         style: TextStyle(color: textColor),
       ),
       subtitle: Text(message),
