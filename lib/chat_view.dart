@@ -1,9 +1,8 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:myapp/widgets/custom_chat.dart';
 
-class safeAreaView extends StatelessWidget {
-  const safeAreaView({super.key});
+class ChatView extends StatelessWidget {
+  const ChatView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,19 +20,29 @@ class safeAreaView extends StatelessWidget {
           color: Colors.white70,
           child: const Column(
             children: [
-              CustomListItem(
+              CustomChat(
                 name: "Abdul Kabeer",
-                message: "Jani Kidhar ho?",
+                message: "Assalam-0-Alaikum",
                 time: "9:00am",
               ),
-              CustomListItem(
-                name: "Zahid",
-                message: "Sorry Me nhi a saka",
+              CustomChat(
+                name: "Abdul Kabeer",
+                message: "Assalam-0-Alaikum",
                 time: "9:00am",
               ),
-              CustomListItem(textColor: Colors.green,
-                name: "Zahid",
-                message: "Sorry Me nhi a saka",
+              CustomChat(
+                name: "Abdul Kabeer",
+                message: "Assalam-0-Alaikum",
+                time: "9:00am",
+              ),
+              CustomChat(
+                name: "Abdul Kabeer",
+                message: "Assalam-0-Alaikum",
+                time: "9:00am",
+              ),
+              CustomChat(
+                name: "Abdul Kabeer",
+                message: "Assalam-0-Alaikum",
                 time: "9:00am",
               ),
             ],
